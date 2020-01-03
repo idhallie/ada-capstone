@@ -23,6 +23,8 @@ class myPlantsViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.delegate = self
         
         // Do any additional setup after loading the view.
+        
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     
