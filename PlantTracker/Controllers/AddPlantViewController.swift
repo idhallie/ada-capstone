@@ -101,10 +101,4 @@ class AddPlantViewController: UIViewController {
         }
     }
     
-    @IBAction func handleLightSelection(_ sender: UIButton) {
-    }
-    
-    @IBAction func lightTapped(_ sender: UIButton) {
-    }
-    
 }

@@ -207,80 +207,16 @@
                                     <constraint firstItem="6Q8-ka-Wh4" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="zy3-2X-Lbo"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q1e-Pe-Z94">
-                                <rect key="frame" x="40" y="259" width="334" height="0.0"/>
-                                <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVu-hZ-RG8">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="0.0"/>
-                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Full Sun">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="0oh-IP-NFl"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-5w-Eky">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="0.0"/>
-                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Part Sun">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="vNW-oi-4NS"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wv-wt-qVq">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="0.0"/>
-                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Part Shade">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="q2S-ga-izZ"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQf-wD-8bw">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="0.0"/>
-                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Full Shade">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="fms-ss-ie7"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLy-R9-qhT">
-                                <rect key="frame" x="40" y="307" width="334" height="32"/>
-                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Light Needs">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleLightSelection:" destination="79T-ov-jBX" eventType="touchUpInside" id="6dv-pT-9lt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fLy-R9-qhT" secondAttribute="trailing" constant="40" id="0EY-R5-rvQ"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="62d-mG-EbF"/>
                             <constraint firstItem="un7-A7-rPR" firstAttribute="top" secondItem="0sN-ic-S0P" secondAttribute="bottom" constant="35" id="6dw-Nl-raR"/>
                             <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerY" secondItem="fAG-ql-aZB" secondAttribute="centerY" id="GP8-Ub-Ln8"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="top" secondItem="GuR-SJ-LO6" secondAttribute="top" constant="20" id="MYJ-t8-uqX"/>
-                            <constraint firstItem="fLy-R9-qhT" firstAttribute="leading" secondItem="fAG-ql-aZB" secondAttribute="leading" constant="40" id="Oru-eo-0b9"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" constant="40" id="QR7-3b-DOT"/>
-                            <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="Q1e-Pe-Z94" secondAttribute="trailing" constant="40" id="U3O-1h-U3n"/>
                             <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="VkM-ge-DgE"/>
                             <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="0sN-ic-S0P" secondAttribute="trailing" constant="40" id="XIf-pB-69s"/>
-                            <constraint firstItem="Q1e-Pe-Z94" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" constant="40" id="bxm-z5-tTn"/>
                             <constraint firstItem="un7-A7-rPR" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" id="cfO-zH-NGk"/>
                             <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="un7-A7-rPR" secondAttribute="trailing" id="xJV-gj-5yv"/>
                         </constraints>
@@ -299,10 +235,6 @@
                         <outletCollection property="typeButtons" destination="Yih-67-fA4" collectionClass="NSMutableArray" id="l6u-bt-egb"/>
                         <outletCollection property="typeButtons" destination="6Q8-ka-Wh4" collectionClass="NSMutableArray" id="7P9-PT-iy8"/>
                         <outletCollection property="typeButtons" destination="f3M-w7-eqC" collectionClass="NSMutableArray" id="dy9-au-X01"/>
-                        <outletCollection property="lightButtons" destination="zVu-hZ-RG8" collectionClass="NSMutableArray" id="EU6-0D-omP"/>
-                        <outletCollection property="lightButtons" destination="Be3-5w-Eky" collectionClass="NSMutableArray" id="tq9-Ut-i0S"/>
-                        <outletCollection property="lightButtons" destination="9Wv-wt-qVq" collectionClass="NSMutableArray" id="iwq-zE-9rO"/>
-                        <outletCollection property="lightButtons" destination="HQf-wD-8bw" collectionClass="NSMutableArray" id="oRU-7T-Dda"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9l-UM-wKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
