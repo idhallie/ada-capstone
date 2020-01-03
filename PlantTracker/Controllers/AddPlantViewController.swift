@@ -30,20 +30,6 @@ class AddPlantViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addPlantBtnPressed(_ sender: UIButton) {
-        
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-        let plant = Plant(context: context)
-        plant.name = textField.text!
-        plant.type = plantType
-        
-        //Save the data to coredata
-        
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        navigationController!.popViewController(animated: true)
-    }
-    
     // Added for Type dropdown
     // Show dropdown when type is tapped
     @IBAction func handleTypeSelection(_ sender: UIButton) {
@@ -101,4 +87,18 @@ class AddPlantViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func addPlantBtnPressed(_ sender: UIButton) {
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let plant = Plant(context: context)
+        plant.name = textField.text!
+        plant.type = plantType
+        
+        //Save the data to coredata
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        navigationController!.popViewController(animated: true)
+    }
 }

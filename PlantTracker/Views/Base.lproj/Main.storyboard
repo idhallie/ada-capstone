@@ -57,8 +57,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-wd-cjZ">
-                                <rect key="frame" x="146" y="786" width="105" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-wd-cjZ">
+                                <rect key="frame" x="154.5" y="780" width="105" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Plant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,18 +207,78 @@
                                     <constraint firstItem="6Q8-ka-Wh4" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="zy3-2X-Lbo"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="30n-y5-vM3">
+                                <rect key="frame" x="0.0" y="289" width="414" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-Ng-OLJ">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="32"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Select Light Needs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-Fp-XNG">
+                                        <rect key="frame" x="40" y="32" width="334" height="32"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Full Sun">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-eu-5e2">
+                                        <rect key="frame" x="40" y="64" width="334" height="32"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Partial Sun">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4t-22-KTs">
+                                        <rect key="frame" x="40" y="96" width="334" height="32"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Partial Shade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-pG-wdr">
+                                        <rect key="frame" x="40" y="128" width="334" height="32"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Full Shade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ALm-eu-5e2" secondAttribute="trailing" constant="40" id="BYQ-Fw-MGi"/>
+                                    <constraint firstItem="3KT-Fp-XNG" firstAttribute="leading" secondItem="30n-y5-vM3" secondAttribute="leading" constant="40" id="KOw-dF-rcw"/>
+                                    <constraint firstAttribute="trailing" secondItem="fmP-Ng-OLJ" secondAttribute="trailing" constant="40" id="Rig-ad-Yvd"/>
+                                    <constraint firstItem="ALm-eu-5e2" firstAttribute="leading" secondItem="30n-y5-vM3" secondAttribute="leading" constant="40" id="V1X-xH-JYh"/>
+                                    <constraint firstItem="fmP-Ng-OLJ" firstAttribute="leading" secondItem="30n-y5-vM3" secondAttribute="leading" constant="40" id="VTF-Do-JkE"/>
+                                    <constraint firstAttribute="trailing" secondItem="C4r-pG-wdr" secondAttribute="trailing" constant="40" id="hXy-Sb-Gde"/>
+                                    <constraint firstItem="C4r-pG-wdr" firstAttribute="leading" secondItem="30n-y5-vM3" secondAttribute="leading" constant="40" id="lyC-u7-sjj"/>
+                                    <constraint firstAttribute="trailing" secondItem="3KT-Fp-XNG" secondAttribute="trailing" constant="40" id="ohb-Sb-9FX"/>
+                                    <constraint firstItem="K4t-22-KTs" firstAttribute="leading" secondItem="30n-y5-vM3" secondAttribute="leading" constant="40" id="qil-0D-KQM"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4t-22-KTs" secondAttribute="trailing" constant="40" id="xed-9U-KSF"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="30n-y5-vM3" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" id="2Nc-qL-0aO"/>
+                            <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="30n-y5-vM3" secondAttribute="trailing" id="3FJ-PZ-8yO"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="62d-mG-EbF"/>
                             <constraint firstItem="un7-A7-rPR" firstAttribute="top" secondItem="0sN-ic-S0P" secondAttribute="bottom" constant="35" id="6dw-Nl-raR"/>
-                            <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerY" secondItem="fAG-ql-aZB" secondAttribute="centerY" id="GP8-Ub-Ln8"/>
+                            <constraint firstItem="GuR-SJ-LO6" firstAttribute="bottom" secondItem="zbZ-wd-cjZ" secondAttribute="bottom" constant="40" id="6nf-XS-tCQ"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="top" secondItem="GuR-SJ-LO6" secondAttribute="top" constant="20" id="MYJ-t8-uqX"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" constant="40" id="QR7-3b-DOT"/>
-                            <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="VkM-ge-DgE"/>
+                            <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="S68-kK-jQ6"/>
                             <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="0sN-ic-S0P" secondAttribute="trailing" constant="40" id="XIf-pB-69s"/>
                             <constraint firstItem="un7-A7-rPR" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" id="cfO-zH-NGk"/>
                             <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="un7-A7-rPR" secondAttribute="trailing" id="xJV-gj-5yv"/>
+                            <constraint firstItem="30n-y5-vM3" firstAttribute="top" secondItem="un7-A7-rPR" secondAttribute="bottom" constant="80" id="yqg-nR-2P6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GuR-SJ-LO6"/>
                     </view>
