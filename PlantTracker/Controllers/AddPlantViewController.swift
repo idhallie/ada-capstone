@@ -13,17 +13,15 @@ class AddPlantViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
+    // For light menu
+    @IBOutlet weak var lightMenu: UIButton!
+    
+    
     // added for Type dropdown
     @IBOutlet var typeButtons: [UIButton]!
     var plantType : String! = ""
     //** end type dropdown addition
-    
-    // added for Light Needs dropdown
-    @IBOutlet var lightButtons: [UIButton]!
-    
-    // ** end Light Needs dropdown
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,6 +37,7 @@ class AddPlantViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
         }
+        lightMenu.isHidden = !lightMenu.isHidden
     }
     
     enum Types: String {
@@ -100,5 +99,25 @@ class AddPlantViewController: UIViewController {
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         navigationController!.popViewController(animated: true)
+    }
+    
+    
+    
+    
+    
+    // LIGHT MENU STUFF
+    
+    @IBOutlet var lightButtons: [UIButton]!
+    
+    
+    
+    @IBAction func handleLightSelection(_ sender: UIButton) {
+        lightButtons.forEach {(button) in
+            button.isHidden = !button.isHidden
+        }
+    }
+    
+    
+    @IBAction func lightTapped(_ sender: UIButton) {
     }
 }

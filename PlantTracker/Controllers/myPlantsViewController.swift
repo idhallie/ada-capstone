@@ -91,5 +91,6 @@ class myPlantsViewController: UIViewController, UITableViewDataSource, UITableVi
             print("Fetching failed \(error)")
         }
     }
+    
 }
 

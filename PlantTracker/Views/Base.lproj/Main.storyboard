@@ -208,47 +208,63 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="30n-y5-vM3">
-                                <rect key="frame" x="0.0" y="289" width="414" height="160"/>
+                                <rect key="frame" x="0.0" y="289" width="414" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-Ng-OLJ">
                                         <rect key="frame" x="40" y="0.0" width="334" height="32"/>
                                         <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="lightMenu"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Select Light Needs">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="handleLightSelection:" destination="79T-ov-jBX" eventType="touchUpInside" id="dmU-ky-mIL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-Fp-XNG">
-                                        <rect key="frame" x="40" y="32" width="334" height="32"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-Fp-XNG">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="0.0"/>
                                         <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Full Sun">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="857-iK-Cle"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-eu-5e2">
-                                        <rect key="frame" x="40" y="64" width="334" height="32"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-eu-5e2">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="0.0"/>
                                         <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Partial Sun">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="Td0-YD-Eh8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4t-22-KTs">
-                                        <rect key="frame" x="40" y="96" width="334" height="32"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4t-22-KTs">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="0.0"/>
                                         <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Partial Shade">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="g8i-vH-7AS"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-pG-wdr">
-                                        <rect key="frame" x="40" y="128" width="334" height="32"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-pG-wdr">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="0.0"/>
                                         <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Full Shade">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lightTapped:" destination="79T-ov-jBX" eventType="touchUpInside" id="QUT-1q-WgP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -284,6 +300,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xwS-CB-anq"/>
                     <connections>
+                        <outlet property="lightMenu" destination="fmP-Ng-OLJ" id="UnM-hA-AnY"/>
                         <outlet property="textField" destination="0sN-ic-S0P" id="rlN-xK-LK0"/>
                         <outletCollection property="typeButtons" destination="Tno-kO-8cu" collectionClass="NSMutableArray" id="jea-rU-0o8"/>
                         <outletCollection property="typeButtons" destination="u1u-du-Sg4" collectionClass="NSMutableArray" id="jLm-QZ-5LW"/>
@@ -295,6 +312,10 @@
                         <outletCollection property="typeButtons" destination="Yih-67-fA4" collectionClass="NSMutableArray" id="l6u-bt-egb"/>
                         <outletCollection property="typeButtons" destination="6Q8-ka-Wh4" collectionClass="NSMutableArray" id="7P9-PT-iy8"/>
                         <outletCollection property="typeButtons" destination="f3M-w7-eqC" collectionClass="NSMutableArray" id="dy9-au-X01"/>
+                        <outletCollection property="lightButtons" destination="3KT-Fp-XNG" collectionClass="NSMutableArray" id="XR7-ui-qQ1"/>
+                        <outletCollection property="lightButtons" destination="ALm-eu-5e2" collectionClass="NSMutableArray" id="wO8-BL-J2k"/>
+                        <outletCollection property="lightButtons" destination="K4t-22-KTs" collectionClass="NSMutableArray" id="Nwe-x6-L2P"/>
+                        <outletCollection property="lightButtons" destination="C4r-pG-wdr" collectionClass="NSMutableArray" id="lfw-kS-sAj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9l-UM-wKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
