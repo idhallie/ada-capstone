@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Ah-cZ-ZMn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Plants View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="myPlantsViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LFG-LS-aar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LFG-LS-aar" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="48E-gE-9DM"/>
+                            <constraint firstItem="LFG-LS-aar" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dfw-wh-ikj"/>
+                            <constraint firstItem="LFG-LS-aar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s2D-gh-agP"/>
+                            <constraint firstItem="LFG-LS-aar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wxQ-43-R5q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H32-eU-JCV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jp6-h8-dIX">
+                            <connections>
+                                <segue destination="79T-ov-jBX" kind="show" id="A1D-KF-aUz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="LFG-LS-aar" id="0ct-3x-sR8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Add Plant View Controller-->
+        <scene sceneID="h87-rF-ic8">
+            <objects>
+                <viewController id="79T-ov-jBX" customClass="AddPlantViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAG-ql-aZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a plant..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sN-ic-S0P">
+                                <rect key="frame" x="40" y="108" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-wd-cjZ">
+                                <rect key="frame" x="154.5" y="427" width="105" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Add Plant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPlantBtnPressed:" destination="79T-ov-jBX" eventType="touchUpInside" id="sUJ-fc-oma"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0sN-ic-S0P" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="62d-mG-EbF"/>
+                            <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerY" secondItem="fAG-ql-aZB" secondAttribute="centerY" id="GP8-Ub-Ln8"/>
+                            <constraint firstItem="0sN-ic-S0P" firstAttribute="top" secondItem="GuR-SJ-LO6" secondAttribute="top" constant="20" id="MYJ-t8-uqX"/>
+                            <constraint firstItem="0sN-ic-S0P" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" constant="40" id="QR7-3b-DOT"/>
+                            <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="VkM-ge-DgE"/>
+                            <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="0sN-ic-S0P" secondAttribute="trailing" constant="40" id="XIf-pB-69s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GuR-SJ-LO6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwS-CB-anq"/>
+                    <connections>
+                        <outlet property="textField" destination="0sN-ic-S0P" id="rlN-xK-LK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9l-UM-wKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cqw-BJ-slK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Ah-cZ-ZMn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KYE-iz-ChE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hAm-J0-hal"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36v-ji-9Jv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
