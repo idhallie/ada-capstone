@@ -57,8 +57,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-wd-cjZ">
-                                <rect key="frame" x="154.5" y="427" width="105" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbZ-wd-cjZ">
+                                <rect key="frame" x="146" y="786" width="105" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Plant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,15 +67,158 @@
                                     <action selector="addPlantBtnPressed:" destination="79T-ov-jBX" eventType="touchUpInside" id="sUJ-fc-oma"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="un7-A7-rPR">
+                                <rect key="frame" x="0.0" y="177" width="414" height="550"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwS-Zo-ogx">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oth-dl-tP8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Select a Type">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-kO-8cu">
+                                        <rect key="frame" x="40" y="50" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UAf-Zm-VUo"/>
+                                        </constraints>
+                                        <state key="normal" title="Annuals">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-du-Sg4">
+                                        <rect key="frame" x="40" y="100" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ypd-So-3Vv"/>
+                                        </constraints>
+                                        <state key="normal" title="Bulbs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1w-oW-RIb">
+                                        <rect key="frame" x="40" y="150" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ux1-bL-rcE"/>
+                                        </constraints>
+                                        <state key="normal" title="Evergreens">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-CL-4ei">
+                                        <rect key="frame" x="40" y="200" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ev3-Rh-6la"/>
+                                        </constraints>
+                                        <state key="normal" title="Edibles">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0f-y7-97B">
+                                        <rect key="frame" x="40" y="250" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="o4b-TT-XQe"/>
+                                        </constraints>
+                                        <state key="normal" title="Grasses">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwK-L0-0qr">
+                                        <rect key="frame" x="40" y="300" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Kg4-8d-w48"/>
+                                        </constraints>
+                                        <state key="normal" title="Perennials">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFF-eU-Bw0">
+                                        <rect key="frame" x="40" y="350" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="385-JD-yWm"/>
+                                        </constraints>
+                                        <state key="normal" title="Shrubs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-67-fA4">
+                                        <rect key="frame" x="40" y="400" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PYk-1k-aCL"/>
+                                        </constraints>
+                                        <state key="normal" title="Succulents">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-ka-Wh4">
+                                        <rect key="frame" x="40" y="450" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="v1u-Ws-Caw"/>
+                                        </constraints>
+                                        <state key="normal" title="Trees">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-w7-eqC">
+                                        <rect key="frame" x="40" y="500" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.75169020890000005" green="0.47968453170000003" blue="0.61569714549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="y2m-N8-R0y"/>
+                                        </constraints>
+                                        <state key="normal" title="Vines">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="f0f-y7-97B" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="2kb-hb-QzG"/>
+                                    <constraint firstItem="vwK-L0-0qr" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="3Uk-FP-jUb"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPe-CL-4ei" secondAttribute="trailing" constant="40" id="80Q-DM-pHN"/>
+                                    <constraint firstItem="u1u-du-Sg4" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="B5n-X4-zpx"/>
+                                    <constraint firstItem="rFF-eU-Bw0" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="Cho-0o-N4J"/>
+                                    <constraint firstItem="RwS-Zo-ogx" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="GII-95-ezW"/>
+                                    <constraint firstItem="Yih-67-fA4" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="Iv6-Cb-0ET"/>
+                                    <constraint firstItem="f3M-w7-eqC" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="Ixn-Ox-vi4"/>
+                                    <constraint firstAttribute="trailing" secondItem="h1w-oW-RIb" secondAttribute="trailing" constant="40" id="NEt-et-o4v"/>
+                                    <constraint firstItem="iPe-CL-4ei" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="QWq-Px-sbJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Q8-ka-Wh4" secondAttribute="trailing" constant="40" id="RRg-mI-0ak"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tno-kO-8cu" secondAttribute="trailing" constant="40" id="RhK-HZ-Ihp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yih-67-fA4" secondAttribute="trailing" constant="40" id="T3s-De-Ves"/>
+                                    <constraint firstAttribute="trailing" secondItem="u1u-du-Sg4" secondAttribute="trailing" constant="40" id="WFU-n4-80W"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFF-eU-Bw0" secondAttribute="trailing" constant="40" id="ZgY-4L-9cU"/>
+                                    <constraint firstItem="Tno-kO-8cu" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="gdJ-67-ZB3"/>
+                                    <constraint firstAttribute="trailing" secondItem="f0f-y7-97B" secondAttribute="trailing" constant="40" id="nfy-Ka-FTU"/>
+                                    <constraint firstAttribute="trailing" secondItem="RwS-Zo-ogx" secondAttribute="trailing" constant="40" id="s6O-mt-xt7"/>
+                                    <constraint firstAttribute="trailing" secondItem="f3M-w7-eqC" secondAttribute="trailing" constant="40" id="whv-zS-qmp"/>
+                                    <constraint firstItem="h1w-oW-RIb" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="wpj-vf-U0Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="vwK-L0-0qr" secondAttribute="trailing" constant="40" id="wy6-50-8x1"/>
+                                    <constraint firstItem="6Q8-ka-Wh4" firstAttribute="leading" secondItem="un7-A7-rPR" secondAttribute="leading" constant="40" id="zy3-2X-Lbo"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="62d-mG-EbF"/>
+                            <constraint firstItem="un7-A7-rPR" firstAttribute="top" secondItem="0sN-ic-S0P" secondAttribute="bottom" constant="35" id="6dw-Nl-raR"/>
                             <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerY" secondItem="fAG-ql-aZB" secondAttribute="centerY" id="GP8-Ub-Ln8"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="top" secondItem="GuR-SJ-LO6" secondAttribute="top" constant="20" id="MYJ-t8-uqX"/>
                             <constraint firstItem="0sN-ic-S0P" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" constant="40" id="QR7-3b-DOT"/>
                             <constraint firstItem="zbZ-wd-cjZ" firstAttribute="centerX" secondItem="fAG-ql-aZB" secondAttribute="centerX" id="VkM-ge-DgE"/>
                             <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="0sN-ic-S0P" secondAttribute="trailing" constant="40" id="XIf-pB-69s"/>
+                            <constraint firstItem="un7-A7-rPR" firstAttribute="leading" secondItem="GuR-SJ-LO6" secondAttribute="leading" id="cfO-zH-NGk"/>
+                            <constraint firstItem="GuR-SJ-LO6" firstAttribute="trailing" secondItem="un7-A7-rPR" secondAttribute="trailing" id="xJV-gj-5yv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GuR-SJ-LO6"/>
                     </view>

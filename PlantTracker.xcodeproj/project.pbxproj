@@ -44,7 +44,6 @@
 		26CFC9F223BE94670069E05D = {
 			isa = PBXGroup;
 			children = (
-				26CFCA0723BE94670069E05D /* PlantTracker.xcdatamodeld */,
 				26CFC9FD23BE94670069E05D /* PlantTracker */,
 				26CFC9FC23BE94670069E05D /* Products */,
 			);
@@ -92,6 +91,7 @@
 		26CFCA1D23BEC3450069E05D /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				26CFCA0723BE94670069E05D /* PlantTracker.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hallie.PlantTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hallie.PlantTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
