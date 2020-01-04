@@ -84,6 +84,7 @@ class AddPlantViewController: UIViewController {
         typeButtons.forEach { (button) in
             button.isHidden = !button.isHidden
         }
+        lightMenu.isHidden = !lightMenu.isHidden
     }
     
     
